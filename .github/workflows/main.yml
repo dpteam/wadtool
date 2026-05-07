@@ -40,7 +40,7 @@ jobs:
       run: dotnet pack -c Release WadLib
 
     - name: Upload nupkg
-      uses: actions/upload-artifact@latest
+      uses: actions/upload-artifact@v7
       with:
         name: nightly-nupkg
         path: WadLib/bin/Release/*.nupkg
